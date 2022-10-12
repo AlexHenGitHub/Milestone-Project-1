@@ -6,3 +6,19 @@ h1{
 {
     color: rgb(91, 27, 242);
 }
+
+
+
+
+
+
+/*Button Style*/
+.GameActions
+{
+    background-color: aqua;
+}
+
+#Rock
+{
+    background-color: rgb(13, 151, 22);
+}
