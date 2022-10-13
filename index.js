@@ -71,18 +71,9 @@ async function RandomInt(UserInput)
     
     }
     
-//alert("Tie"); 
-    // else() =>
-    // {
-        
-    // }
-  
-    //console.log(RanOuput[RanNum]);
-
-
 }
 
-
+//alert("Tie"); 
   
 
 
