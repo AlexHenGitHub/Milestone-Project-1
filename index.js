@@ -5,22 +5,17 @@ let count = 0
 //const UserInput = prompt("Rock,Paper, Scissors!")
 
 
-function OnClick()
-{
-
-    console.log("Test")
-
-}
 
 
-//let UserInput = 1
+//let UserInput = 1     let message = document.querySelector("#message");     message.innerHTML = "Testing"
 
 async function RandomInt(UserInput) 
 {   
 
-    // let winStat = console.log("You win")
-    // let losStat = console.log("You lose")
-    // let tie = console.log("Tie")
+    
+
+
+    let AIRes = document.querySelector("#GameRes");
     
     let RanNum = Math.floor(Math.random() * 3)
     let RanOuput = ["Rock", "Paper", "Scissors"];
@@ -30,24 +25,24 @@ async function RandomInt(UserInput)
     //Rock outputs
     if(UserInput == "Rock" && AiOutput == "Scissors")//Roc v Sci
     {
-        console.log("You win")
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++ 
     }
     else if(UserInput == "Rock" && AiOutput == "Paper" )//Roc v Pap
     {
-        console.log("You lose")
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
     }
     
     //Paper Outputs
     if(UserInput == "Paper" && AiOutput == RanOuput[0])//Pap v Roc
     {
-        
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
     }
     if(UserInput == "Rock" && AiOutput == RanOuput[2])//Pap v SCi
     {
-        
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
     }
 
@@ -55,19 +50,19 @@ async function RandomInt(UserInput)
 
     if(UserInput == "Scissors" && AiOutput == RanOuput[1])//Sci v Pap
     {
-        
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
     }
     if(UserInput == "Scissors" && AiOutput == RanOuput[0])//Sci v Roc
     {
-        
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
     }
      
     //Tie
     if(UserInput == AiOutput)//Roc v Roc
     {
-        console.log("Tie")
+        AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you TIED!"
     
     }
     

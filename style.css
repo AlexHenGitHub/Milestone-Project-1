@@ -1,5 +1,8 @@
 
-
+body
+{
+    text-align: center;
+}
 
 
 .Result
@@ -11,7 +14,7 @@
 
 #Title
 {
-    color: rgb(91, 27, 242);
+    color: rgb(44, 6, 3);
 }
 
 
