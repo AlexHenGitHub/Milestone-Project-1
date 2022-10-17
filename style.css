@@ -1,5 +1,16 @@
 
 
+#TestTag
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#OffRulesRPSLink
+{
+    color: rgb(20, 8, 246);
+}
 
 
 
@@ -7,12 +18,14 @@ a
 {
  font-family: Arial, Helvetica, sans-serif;
  text-decoration: none;
+ color: rgb(135, 7, 7);
+ 
 }
 
 body
 {
     text-align: center;
-    background-image: url(../Images\\pexels-eva-bronzini-7598250.jpg);
+    background-image: url(../Images\\ImgOfNoteBook.jpg);
 }
 
 
@@ -80,6 +93,8 @@ body
 {
     color: rgb(161, 17, 6);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
     
 
 }
