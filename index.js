@@ -2,18 +2,12 @@ let wins = 0
 let loses = 0
 let count = 0
 
-//const UserInput = prompt("Rock,Paper, Scissors!")
-
-
-
-
-//let UserInput = 1     let message = document.querySelector("#message");     message.innerHTML = "Testing"
 
 async function RandomInt(UserInput) 
 {   
 
-    
 
+    //let bestOutThree = 3;
 
     let AIRes = document.querySelector("#GameRes");
     
@@ -27,11 +21,13 @@ async function RandomInt(UserInput)
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++ 
+        bestOutThree--
     }
     else if(UserInput == "Rock" && AiOutput == "Paper" )//Roc v Pap
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
+        bestOutThree--
     }
     
     //Paper Outputs
@@ -39,24 +35,27 @@ async function RandomInt(UserInput)
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
+        bestOutThree--
     }
-    if(UserInput == "Rock" && AiOutput == RanOuput[2])//Pap v SCi
+    if(UserInput == "Paper" && AiOutput == RanOuput[2])//Pap v SCi
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
+        bestOutThree--
     }
 
     //Scissors Outputs
-
     if(UserInput == "Scissors" && AiOutput == RanOuput[1])//Sci v Pap
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
+        bestOutThree--
     }
     if(UserInput == "Scissors" && AiOutput == RanOuput[0])//Sci v Roc
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
+        bestOutThree--
     }
      
     //Tie
@@ -65,10 +64,15 @@ async function RandomInt(UserInput)
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you TIED!"
     
     }
+
+    if(bestOutThree == 0)
+    {
+
+    }
     
 }
 
-//alert("Tie"); 
+
   
 
 
