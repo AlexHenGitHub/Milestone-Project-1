@@ -31,7 +31,7 @@ async function RandomInt(UserInput)
     if(UserInput == "Rock" && AiOutput == "Scissors")//Roc v Sci
     {
         console.log("You win")
-        wins++
+        wins++ 
     }
     else if(UserInput == "Rock" && AiOutput == "Paper" )//Roc v Pap
     {
