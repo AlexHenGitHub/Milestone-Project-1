@@ -2,18 +2,10 @@ let wins = 0
 let lost = 0
 let tie = 0
 
-
 async function RandomInt(UserInput) 
 {   
-
-
-    //let bestOutThree = 3;
-
     let AIRes = document.querySelector("#GameRes");
-
     let Res = document.querySelector("#COUNTER");
-    
-    
     let RanNum = Math.floor(Math.random() * 3)
     let RanOuput = ["Rock", "Paper", "Scissors"];
     let AiOutput = RanOuput[RanNum];
@@ -25,7 +17,6 @@ async function RandomInt(UserInput)
         Res.innerHTML = "WIN: " + wins + " | LOSS: " + lost + " | DRAW: " + tie
         
     }
-
 
     //Rock outputs
     if(UserInput == "Rock" && AiOutput == "Scissors")//Roc v Sci
