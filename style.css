@@ -1,5 +1,4 @@
 
-
 #Title
 {
     color: rgb(161, 17, 6);
@@ -12,6 +11,11 @@
 #COUNTER
 {
     margin-top: 40px;
+}
+
+a
+{
+    color: rgb(20, 8, 246);
 }
 
 body
@@ -159,7 +163,3 @@ img
 }
 
 
-#OffRulesRPSLink
-{
-    color: rgb(20, 8, 246);
-}
