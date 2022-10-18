@@ -45,8 +45,11 @@ body
 .SelectButtons button
 {
     margin-top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #af7a4c;
-    
+    border: none;
+    color: white;
+    padding: 30px 64px;
 }
 #PLAY_BUTTON
 {
@@ -61,30 +64,20 @@ body
 
 
 
+
 /* gameScreen */
 
 
 
 
 
-#WIN_COUNTER
-{
 
 
-    padding-right: 800px;
-}
 
-#LOSS_COUNTER
-{
-
-
-    padding-left: 800px;
-    margin-bottom: 100px;
-}
 
 .GameActions
 {
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 img 
@@ -92,6 +85,9 @@ img
     margin: 50px;
     height: 160px;
 }
+
+
+
 
 #Rock
 {

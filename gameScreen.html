@@ -29,25 +29,36 @@
 
 
     <div class="container">  
+
+    <!-- <div class = "SelectButtons">
+        <button type="button" onclick="window.location.href='gameScreen.html'" id="PLAY_BUTTON" >PLAY</button>   
+        <button type="button" onclick="window.location.href='gameScreen.html'" id="HOW_TO_PLAY" >HOW TO PLAY</button>
+    </div> -->
+
+
         
         <a id="Main Menu" href="index.html">Main Menu</a>
         
         <a id="gameTotitle" href="howToPlay.html">How to Play</a>
 
-        <h1 id="WIN_COUNTER"> WIN COUNTER:</h1>
-        <h1 id="LOSS_COUNTER"> LOSS COUNTER:</h1>
+        <h1 id="COUNTER"> COUNTER</h1>
+      
         
         <!-- game controls-->
         <div class = "GameActions">
             <div class = "testSrc">
-                <img src="Images/purepng.com-classic-red-appleapplegreenhealthycut-641522015196qtavo.png" alt="Apple">
-                <img src="Images/purepng.com-classic-red-appleapplegreenhealthycut-641522015196qtavo.png" alt="Apple">
-                <img src="Images/purepng.com-classic-red-appleapplegreenhealthycut-641522015196qtavo.png" alt="Apple">
+                <img src="Images\Scissors.png" alt="Apple">
+                <img src="Images\Paper.png" alt="Apple">
+                <img src="Images\Rock.png" alt="Apple">
             </div>
 
-            <button type="button" id="Rock" onclick="RandomInt('Rock')">Rock!</button>
-            <button type="button" id="Paper" onclick="RandomInt('Paper')">Paper!</button>
-            <button type="button" id="Scissors" onclick="RandomInt('Scissors')">Scissor!</button>
+            <div class = GameButtons> 
+                <button type="button" id="Rock" onclick="RandomInt('Rock')">Rock!</button>
+                <button type="button" id="Paper" onclick="RandomInt('Paper')">Paper!</button>
+                <button type="button" id="Scissors" onclick="RandomInt('Scissors')">Scissor!</button>
+
+            </div>
+
             
         </div>
 
