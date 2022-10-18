@@ -1,3 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let wins = 0
 let loses = 0
 let count = 0
@@ -46,13 +62,13 @@ async function RandomInt(UserInput)
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
+        Counter()
         
     }
     if(UserInput == "Paper" && AiOutput == RanOuput[2])//Pap v SCi
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
-        
         Counter()
     }
 
@@ -61,16 +77,12 @@ async function RandomInt(UserInput)
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
-       
-
         Counter()
     }
     if(UserInput == "Scissors" && AiOutput == RanOuput[0])//Sci v Roc
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
-        
-
         Counter()
     }
      

@@ -2,49 +2,16 @@
 
 
 
-#TestTag
+
+#Title
 {
+    color: rgb(161, 17, 6);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 30px;
-}
-
-#OffRulesRPSLink
-{
-    color: rgb(20, 8, 246);
-}
-
-
-
-
-.GameActions
-{
-    margin-top: 20px;
-}
-
-
-
-.testSrc
-{
+    font-size: 100px;
+    
 
 }
-
-img 
-{
-    margin: 50px;
-    height: 160px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 a
@@ -62,13 +29,69 @@ body
 }
 
 
-.Result
-{   
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
+
+/* index */
+
+
+
+
+/* .SelectButtons
+{
+    margin: 120px;
+} */
+
+
+
+.SelectButtons button
+{
+    margin-top: 250px;
+    background-color: #af7a4c;
+    
+}
+#PLAY_BUTTON
+{
+    margin-right: 120px;
+    
 }
 
 
+
+
+
+
+
+
+/* gameScreen */
+
+
+
+
+
+#WIN_COUNTER
+{
+
+
+    padding-right: 800px;
+}
+
+#LOSS_COUNTER
+{
+
+
+    padding-left: 800px;
+    margin-bottom: 100px;
+}
+
+.GameActions
+{
+    margin-top: 20px;
+}
+
+img 
+{
+    margin: 50px;
+    height: 160px;
+}
 
 #Rock
 {
@@ -115,29 +138,27 @@ body
     cursor: pointer;
 }
 
-
-
-
-
-
-
-#Title
-{
-    color: rgb(161, 17, 6);
+.Result
+{   
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 100px;
-    
-
+    color: rgb(0, 0, 0);
 }
 
 
+/* howToPlay */
+
+#TestTag
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
 
 
-
-
-
-
+#OffRulesRPSLink
+{
+    color: rgb(20, 8, 246);
+}
 
 
 
