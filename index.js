@@ -10,24 +10,34 @@ async function RandomInt(UserInput)
     //let bestOutThree = 3;
 
     let AIRes = document.querySelector("#GameRes");
+
+    let WRes = document.querySelector("#WIN_COUNTER");
+    let LRes = document.querySelector("#LOSS_COUNTER");
     
     let RanNum = Math.floor(Math.random() * 3)
     let RanOuput = ["Rock", "Paper", "Scissors"];
     let AiOutput = RanOuput[RanNum];
     console.log(AiOutput)
 
+
+    function Counter()
+    { 
+       Counter()
+    }
+
+
     //Rock outputs
     if(UserInput == "Rock" && AiOutput == "Scissors")//Roc v Sci
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
-        wins++ 
-        bestOutThree--
+        wins++
+        Counter()
     }
     else if(UserInput == "Rock" && AiOutput == "Paper" )//Roc v Pap
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
-        bestOutThree--
+        Counter()
     }
     
     //Paper Outputs
@@ -35,13 +45,13 @@ async function RandomInt(UserInput)
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
-        bestOutThree--
+        Counter()
     }
     if(UserInput == "Paper" && AiOutput == RanOuput[2])//Pap v SCi
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
-        bestOutThree--
+        Counter()
     }
 
     //Scissors Outputs
@@ -49,26 +59,27 @@ async function RandomInt(UserInput)
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you WON!"
         wins++
-        bestOutThree--
+       Counter()
     }
     if(UserInput == "Scissors" && AiOutput == RanOuput[0])//Sci v Roc
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you LOST!"
         loses++
-        bestOutThree--
+        Counter()
     }
      
     //Tie
     if(UserInput == AiOutput)//Roc v Roc
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you TIED!"
+
+       
     
     }
 
-    if(bestOutThree == 0)
-    {
+    
+    
 
-    }
     
 }
 
