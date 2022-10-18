@@ -1,22 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let wins = 0
 let lost = 0
-let count = 0
+let tie = 0
 
 
 async function RandomInt(UserInput) 
@@ -38,7 +22,7 @@ async function RandomInt(UserInput)
 
     function Counter()
     { 
-        Res.innerHTML = "WIN: " + wins + " | LOSS: " + lost
+        Res.innerHTML = "WIN: " + wins + " | LOSS: " + lost + " | DRAW: " + tie
         
     }
 
@@ -90,24 +74,9 @@ async function RandomInt(UserInput)
     if(UserInput == AiOutput)//Roc v Roc
     {
         AIRes.innerHTML = "AI's Choice: "+AiOutput+ " you TIED!"
-
+        tie++
         Counter()
     
     }
-
-    
-    
-
-    
+   
 }
-
-
-  
-
-
-
-  
-
-  
- 
-  

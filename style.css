@@ -1,25 +1,17 @@
 
 
-
-
-
 #Title
 {
     color: rgb(161, 17, 6);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 100px;
-    
-
+    margin-top: 40px;
 }
 
-
-a
+#COUNTER
 {
- font-family: Arial, Helvetica, sans-serif;
- text-decoration: none;
- color: rgb(135, 7, 7);
- 
+    margin-top: 40px;
 }
 
 body
@@ -28,23 +20,17 @@ body
     background-image: url(../Images\\ImgOfNoteBook.jpg);
 }
 
+#InvisButton
+{
+    visibility: hidden;
+}
 
 
 /* index */
 
-
-
-
-/* .SelectButtons
-{
-    margin: 120px;
-} */
-
-
-
 .SelectButtons button
 {
-    margin-top: 250px;
+    margin-top: 160px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #af7a4c;
     border: none;
@@ -57,23 +43,18 @@ body
     
 }
 
-
-
-
-
-
-
-
-
 /* gameScreen */
 
-
-
-
-
-
-
-
+.OptionButtons button
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #af7a4c;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    padding: 15px 32px;
+    
+}
 
 .GameActions
 {
@@ -85,9 +66,6 @@ img
     margin: 50px;
     height: 160px;
 }
-
-
-
 
 #Rock
 {
@@ -150,11 +128,38 @@ img
     font-size: 30px;
 }
 
+#MainMENU
+{
+    background-color: #af7a4c;
+    border: none;
+    color: white;
+    padding: 8px 48px;
+    margin: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#PlayBUTTON
+{
+    background-color: #af7a4c;
+    border: none;
+    color: white;
+    padding: 8px 48px;
+    margin: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 #OffRulesRPSLink
 {
     color: rgb(20, 8, 246);
 }
-
-
-
